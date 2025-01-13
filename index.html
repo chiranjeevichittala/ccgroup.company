@@ -8,63 +8,85 @@
     <style>
         /* Custom Animations */
         .fade-in {
-            animation: fadeIn 2s ease-in;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         @keyframes fadeIn {
             from {
                 opacity: 0;
+                transform: translateY(10px);
             }
             to {
                 opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .bounce-hover:hover {
+            animation: bounce 0.6s;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
             }
         }
     </style>
 </head>
-<body class="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 text-gray-800">
+<body class="bg-gradient-to-tr from-pink-50 via-yellow-100 to-teal-100 text-gray-800 min-h-screen">
     <!-- Header Section -->
-    <header class="bg-gradient-to-r from-indigo-900 to-indigo-600 text-white p-10 text-center shadow-md rounded-b-lg">
-        <h1 class="text-5xl font-extrabold fade-in">Welcome to CC Group</h1>
-        <p class="text-lg mt-2 font-light">Innovating for a Brighter Tomorrow</p>
+    <header class="bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-400 text-white py-16 px-8 text-center shadow-lg">
+        <h1 class="text-6xl font-extrabold fade-in">Welcome to CC Group</h1>
+        <p class="text-2xl mt-4 font-light fade-in">Empowering Innovation and Creativity</p>
     </header>
 
     <!-- Products Section -->
-    <section class="bg-white p-12 text-center shadow-inner">
-        <h2 class="text-4xl font-bold mb-8 text-indigo-800">Our Products</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-gray-100 shadow-lg p-8 rounded-lg hover:shadow-xl transition-shadow">
-                <h3 class="text-2xl font-bold text-gray-800">Interviewbyte</h3>
-                <p class="text-md mt-4 text-gray-600">A platform for preparing job interview questions, mock tests, and career guidance.</p>
-                <a href="https://www.interviewbyte.in" class="text-indigo-600 underline mt-6 block">Visit Now</a>
+    <section class="py-20 px-8 bg-gradient-to-b from-yellow-50 to-blue-100 text-center">
+        <h2 class="text-5xl font-extrabold mb-12 text-indigo-700 fade-in">Our Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
+            <div class="bg-gradient-to-br from-green-100 to-blue-50 shadow-xl p-6 rounded-lg transform transition-transform hover:scale-105 hover:shadow-2xl fade-in">
+                <h3 class="text-2xl font-bold text-gray-900">Interviewbyte</h3>
+                <p class="mt-4 text-gray-600">Prepare for interviews with questions, mock tests, and career guidance.</p>
+                <a href="https://www.interviewbyte.in" target="_blank" class="text-indigo-600 mt-6 inline-block hover:text-indigo-800">Visit Now</a>
             </div>
-            <div class="bg-gray-100 shadow-lg p-8 rounded-lg hover:shadow-xl transition-shadow">
-                <h3 class="text-2xl font-bold text-gray-800">NextCollab</h3>
-                <p class="text-md mt-4 text-gray-600">An upcoming project for collaborative team management. Stay tuned for updates!</p>
+            <div class="bg-gradient-to-br from-pink-100 to-red-50 shadow-xl p-6 rounded-lg transform transition-transform hover:scale-105 hover:shadow-2xl fade-in">
+                <h3 class="text-2xl font-bold text-gray-900">NextCollab</h3>
+                <p class="mt-4 text-gray-600">Collaborative team management tools for modern workplaces.</p>
+                <a href="#" class="text-indigo-600 mt-6 inline-block hover:text-indigo-800">Learn More</a>
             </div>
-            <div class="bg-gray-100 shadow-lg p-8 rounded-lg hover:shadow-xl transition-shadow">
-                <h3 class="text-2xl font-bold text-gray-800">Future Projects</h3>
-                <p class="text-md mt-4 text-gray-600">More exciting projects from CC Group are in progress. Check back soon!</p>
+            <div class="bg-gradient-to-br from-yellow-100 to-orange-50 shadow-xl p-6 rounded-lg transform transition-transform hover:scale-105 hover:shadow-2xl fade-in">
+                <h3 class="text-2xl font-bold text-gray-900">ResumeByte</h3>
+                <p class="mt-4 text-gray-600">Create digital resumes and showcase your skills professionally.</p>
+                <a href="https://www.resumebyte.in" target="_blank" class="text-indigo-600 mt-6 inline-block hover:text-indigo-800">Visit Now</a>
+            </div>
+            <div class="bg-gradient-to-br from-purple-100 to-indigo-50 shadow-xl p-6 rounded-lg transform transition-transform hover:scale-105 hover:shadow-2xl fade-in">
+                <h3 class="text-2xl font-bold text-gray-900">Future Projects</h3>
+                <p class="mt-4 text-gray-600">Explore upcoming innovations from CC Group. Stay tuned!</p>
+                <a href="#" class="text-indigo-600 mt-6 inline-block hover:text-indigo-800">Learn More</a>
             </div>
         </div>
     </section>
 
     <!-- About Us Section -->
-    <section class="p-12 text-center">
-        <h2 class="text-4xl font-bold mb-8 text-indigo-800">About Us</h2>
-        <p class="text-lg max-w-3xl mx-auto text-gray-700">CC Group is dedicated to building innovative solutions and empowering businesses with cutting-edge technology. We aim to create impactful digital products that drive growth and success.</p>
-        <p class="text-lg max-w-3xl mx-auto mt-4 text-gray-600 font-bold">
+    <section class="py-20 px-8 bg-gradient-to-b from-white to-teal-50 text-center">
+        <h2 class="text-5xl font-extrabold mb-12 text-indigo-700 fade-in">About Us</h2>
+        <p class="text-xl max-w-4xl mx-auto text-gray-700 fade-in">CC Group is dedicated to building innovative solutions and empowering businesses with cutting-edge technology. We aim to create impactful digital products that drive growth and success.</p>
+        <p class="text-xl max-w-4xl mx-auto mt-6 text-gray-600 font-bold fade-in">
             <span class="block mt-4">Owned and Operated by:</span>
-            <span class="text-indigo-900 text-xl">Koteswaramma Chittala</span>, Solo Proprietor of CC Group
+            <span class="text-indigo-900 text-2xl">Koteswaramma Chittala</span>, Solo Proprietor of CC Group
         </p>
     </section>
-    
+
     <!-- Footer -->
-    <footer class="bg-indigo-900 text-gray-300 p-6 text-center rounded-t-lg">
+    <footer class="bg-gradient-to-r from-teal-600 via-blue-500 to-indigo-500 text-gray-100 py-8 px-4 text-center">
         <p>&copy; 2024 CC Group. All Rights Reserved.</p>
     </footer>
 
     <!-- Smooth Scroll to Top -->
-    <button id="scrollToTop" class="fixed bottom-4 right-4 bg-indigo-600 text-white p-3 rounded-full shadow-lg hidden hover:bg-indigo-800 transition">⬆</button>
+    <button id="scrollToTop" class="fixed bottom-4 right-4 bg-gradient-to-br from-pink-500 to-red-400 text-white p-4 rounded-full shadow-lg hidden hover:from-red-400 hover:to-pink-500 transition-transform transform hover:scale-110 bounce-hover">⬆</button>
 
     <script>
         // Smooth Scroll to Top
